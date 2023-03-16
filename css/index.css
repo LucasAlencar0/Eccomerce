@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+   
+    
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+
+.nav-2 {
+    padding: 40px;
+}
+.nav-3 {
+    padding: 40px;
+    
+}
+
+h2{
+    margin: 30px;
+    font-weight: bold;
+}
+
+.lista {
+    display: flex;
+    justify-content: space-around;
+    font-weight: bold;
+}
+
+li {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+
+
+}
+
+li:hover {
+    cursor: pointer;
+
+}
+
+li img {
+    border: 1px solid;
+    border-radius: 50px;
+    width: 100px;
+    padding: 5px;
+}
+
+.barra {
+    height: 25px;
+    width: 50%;
+    margin-left: 100px;
+    margin-right: 80px;
+    border-radius: 10px;
+    padding: 20px;
+    outline: none;
+    background-color: rgba(128, 128, 128, 0.171);
+    border: none;
+
+}
+
+.barra-2 {
+    display: none;
+}
+
+.produtos{
+    margin: 40px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.produto-1{
+    width: 300px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.produto-1 button {
+    background-color: rgb(5, 192, 192);
+    color: white;
+    border-radius: 5px;
+    border: none;
+    width: 50%;
+    height: 40px;
+    margin-bottom: 30px;
+
+}
+
+.produto-1 p {
+    font-weight: bold;
+}
+
+@media (max-width: 992px) {
+    .barra {
+        display: none;
+    }
+
+    .barra-2 {
+        display: block;
+        width: 50%;
+        height: 25px;
+        border-radius: 10px;
+        padding: 20px;
+        outline: none;
+        background-color: rgba(128, 128, 128, 0.171);
+        border: none;
+    }
+}
+
+@media (max-width: 576px){
+    .lista{
+     justify-content: space-around;
+     overflow-x: scroll;
+     padding: 30px;
+     
+    }
+
+    li img{
+       height: 80px;
+       width: 80px; 
+    }
+}
+
+@media (max-width: 767.98px){
+    .lista{
+        width: 100%;
+        justify-content: space-between;
+        gap: 30px;
+    
+       }
+
+       li img{
+        height: 80px;
+        width: 80px; 
+     }
+
+    .nav-2{
+        padding: 0;
+    }
+     
+    .produtos {
+        justify-content: center;
+    }
+}
+
